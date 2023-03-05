@@ -69,4 +69,37 @@ body.light {
       color: $navigator-text-color;
     }
   }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  hr:not([class]) {
+    border-top: 1px solid #bbb;
+    text-align: center;
+    margin: 40px 30px;
+  }
+  hr:not([class]):after {
+    content: '\2205';
+    display: inline-block;
+    position: relative;
+    top: -18px;
+    padding: 0 10px;
+    background: #fff;
+    color: #bbb;
+    font-size: 20px;
+  }
+
+  strong {
+    background-color: #0ac9ff;
+    border: 2px solid #2687d6;
+    border-radius: 10px;
+    margin: 0px 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
 }

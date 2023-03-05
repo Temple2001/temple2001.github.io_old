@@ -71,6 +71,16 @@ body.dark {
   h1,
   h2 {
     border-bottom-color: rgba(255, 255, 255, 0.3);
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
   }
 
   .navigator {
@@ -81,5 +91,30 @@ body.dark {
   }
   td {
     border-bottom: 1px solid #eee;
+  }
+
+  hr:not([class]) {
+    border-top: 1px solid #bbb;
+    text-align: center;
+    margin: 40px 30px;
+  }
+  hr:not([class]):after {
+    content: '\2205';
+    display: inline-block;
+    position: relative;
+    top: -18px;
+    padding: 0 10px;
+    background: $dark-background-color;
+    color: #bbb;
+    font-size: 20px;
+  }
+
+  strong {
+    background-color: #008080;
+    border: 2px solid #25caa6;
+    border-radius: 10px;
+    margin: 0px 5px;
+    padding-left: 2px;
+    padding-right: 2px;
   }
 }
